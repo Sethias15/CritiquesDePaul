@@ -1,6 +1,6 @@
-* {
+*{
     box-sizing: border-box;
-  }
+}
   
   /* Style the body */
   body {
@@ -35,6 +35,16 @@
     background-color: #ddd;
     color: black;
   }
+
+/* sub-options navbar */
+.sous-menu {
+    display: none;
+}
+
+.navbar:hover > .sous-menu{
+    display: block;
+    position: absolute;
+}
   
   /* Column container */
   .row {  
