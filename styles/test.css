@@ -42,7 +42,7 @@
 }
 
 .navbar:hover > .sous-menu{
-    display: block;
+    display: flex;
     position: absolute;
 }
   
