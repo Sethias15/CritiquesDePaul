@@ -42,8 +42,9 @@
 }
 
 .navbar:hover > .sous-menu{
-    display: flex;
+    display: block;
     position: absolute;
+    top: 50%;
 }
   
   /* Column container */
