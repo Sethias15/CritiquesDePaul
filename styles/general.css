@@ -52,9 +52,29 @@ body {
 }
   
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .row, .menu {   
         flex-direction: column;
+    }
+
+    .menu li a:hover{
+        background-color: rgb(70,70,70);
+    }
+
+    .submenu li{
+        background-color: rgb(60,60,60);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .menu > li {
+        
+    }
+}
+
+@media screen and (min-width: 701px) {
+    .menu > li {
+        width: 20%;
     }
 }
 
@@ -66,7 +86,6 @@ body {
 .menu{
 
     /* Propriétés du menu */
-    /* left: -2.5%; */
     user-select: none;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -85,15 +104,14 @@ body {
 
 .menu li {
     list-style: none;
-    width: 200px;
     height: inherit;
     text-align: center;
-   /*  border: 1px solid red; */
+    /* border: 1px solid red; */
 }
 
 .menu li a{
-    /* border: 1px solid lime; */
-    padding: 14px 20px;
+    border: 1px solid black;
+    padding: 14px 0px;
     display: block;
     text-decoration: none;
     color: #fff;
@@ -109,9 +127,9 @@ ul.submenu{
 
 .menu li:hover > ul.submenu{
     margin: 0px;
+    width: inherit;
     display: block;
     position: absolute;
     background-color: #333;
     width: inherit;
-    float: left;
 }
