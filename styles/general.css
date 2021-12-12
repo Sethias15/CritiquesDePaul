@@ -64,6 +64,10 @@ body {
     .submenu li{
         background-color: rgb(60,60,60);
     }
+
+    .menu li:hover > ul.submenu{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 992px) {
