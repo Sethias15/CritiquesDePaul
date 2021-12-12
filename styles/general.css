@@ -10,10 +10,12 @@ body {
   
 /* Header/logo Title */
 .header {
-    padding: 60px;
+    padding: 30px;
     text-align: center;
-    background: #1abc9c;
+    background: #3399ff;
     color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
 } 
   
 /* Column container */
@@ -26,7 +28,7 @@ body {
 /* Sidebar/left column */
 .side {
     flex: 30%;
-    background-color: #f1f1f1;
+    background-color: #ccccff;
     padding: 20px;
 }
   
@@ -46,12 +48,28 @@ body {
   
 /* Footer */
 .footer {
-    padding: 20px;
     text-align: center;
-    background: #ddd;
+    background-color: #333;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.footer a {
+    text-decoration: none;
+    background-color: #333346;
+    color: #fff;
+    height: inherit;
+    display: block;
+    padding: 15px;
+}
+
+.footer p {
+    margin: 0px;
+    padding: 15px;
 }
   
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+/* Layout change when screen is 700px or smaller*/
 @media screen and (max-width: 700px) {
     .row, .menu {   
         flex-direction: column;
@@ -70,12 +88,14 @@ body {
     }
 }
 
+/*  */
 @media screen and (max-width: 992px) {
     .menu > li {
         
     }
 }
 
+/* Layout change when screen is bigger than 700px */
 @media screen and (min-width: 701px) {
     .menu > li {
         width: 20%;
@@ -104,6 +124,7 @@ body {
     /* Contenu boutons */
     font-size: 20px;
     text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .menu li {
