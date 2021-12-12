@@ -76,6 +76,10 @@ body {
     .menu > li {
         width: 20%;
     }
+
+    .menu li:hover > ul.submenu{
+        width: inherit;
+    }
 }
 
 /* Menu */
@@ -127,7 +131,6 @@ ul.submenu{
 
 .menu li:hover > ul.submenu{
     margin: 0px;
-    width: inherit;
     display: block;
     position: absolute;
     background-color: #333;
