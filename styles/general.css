@@ -89,11 +89,11 @@ body {
 }
 
 /*  */
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
     .menu > li {
         
     }
-}
+} */
 
 /* Layout change when screen is bigger than 700px */
 @media screen and (min-width: 701px) {
