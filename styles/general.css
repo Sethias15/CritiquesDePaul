@@ -57,16 +57,16 @@ body {
         flex-direction: column;
     }
 
-    .menu li a:hover{
+    .menu li {
+        width: 100%;
+    }
+
+    .menu li a:hover {
         background-color: rgb(70,70,70);
     }
 
     .submenu li{
         background-color: rgb(60,60,60);
-    }
-
-    .menu li:hover > ul.submenu{
-        width: 100%;
     }
 }
 
@@ -81,8 +81,8 @@ body {
         width: 20%;
     }
 
-    .menu li:hover > ul.submenu{
-        width: inherit;
+    .menu li a:hover > ul.submenu{
+        /* width: inherit; */
     }
 }
 
