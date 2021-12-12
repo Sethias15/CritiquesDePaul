@@ -80,10 +80,6 @@ body {
     .menu > li {
         width: 20%;
     }
-
-    .menu li a:hover > ul.submenu{
-        /* width: inherit; */
-    }
 }
 
 /* Menu */
