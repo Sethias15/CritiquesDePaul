@@ -42,10 +42,10 @@ body {
 
 .reviews-title {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 35% 65%;
     text-align: left;
     /* border: 1px solid red; */
-    font-size: 18px;
+    font-size: 16.5px;
 }
 
 .reviews-plat {
