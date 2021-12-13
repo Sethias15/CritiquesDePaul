@@ -90,11 +90,11 @@ body {
 }
 
 #waffle {
-    background-image:url(../images/waffle.jpg);
+    background-image:url("../images/waffle.jpg");
 }
 
 #cupcake {
-    background-image:url(../images/cupcake.jpg);
+    background-image:url("../images/cupcake.jpg");
 }
   
 /* Main column */
