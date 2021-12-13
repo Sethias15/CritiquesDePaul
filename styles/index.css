@@ -1,0 +1,14 @@
+.about {
+    flex: 20%;
+    background-color: #cce6ff;
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* Main */
+.main {
+    flex: 80%;
+    background-color: white;
+    padding: 20px;
+}

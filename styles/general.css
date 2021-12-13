@@ -32,53 +32,6 @@ body {
   
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
-.reviews {
-    flex: 35%;
-    background-color: #cce6ff;
-    padding: 20px;
-    font-size: 20px;
-    text-align: justify;
-}
-
-.reviews-title {
-    display: grid;
-    grid-template-columns: 35% 65%;
-    text-align: left;
-    /* border: 1px solid red; */
-    font-size: 16.5px;
-}
-
-.reviews-plat {
-    text-align: right;
-    padding: 0px;
-    /* border: 1px solid blue; */
-}
-
-.reviews > hr {
-    display: block; 
-    height: 1px;
-    border: 0; 
-    border-top: 1px solid #000;
-    margin: 1em 0;
-    padding: 0;
-}
-
-.user {
-    border: 1px solid #000;
-    background-color: #3399ff;
-    padding: 3px;
-}
-
-.icon{
-    width: 40px;
-    height: 40px;
-    background-size: cover;
-    border-radius: 20px;
-}
-
-.username {
-    padding: 0px;
-}
 
 .table {
     display: table;
@@ -88,21 +41,13 @@ body {
     display: table-cell;
     vertical-align: middle;
 }
-
-#waffle {
-    background-image:url("../images/waffle.jpg");
-}
-
-#cupcake {
-    background-image:url("../images/cupcake.jpg");
-}
   
 /* Main column */
-.main {
+/* .main {
     flex: 65%;
     background-color: white;
     padding: 20px;
-}
+} */
   
 /* Fake image, just for this example */
 .fakeimg {
