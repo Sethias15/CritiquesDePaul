@@ -1,9 +1,18 @@
 .about {
     flex: 20%;
     background-color: #cce6ff;
-    padding: 20px;
     font-size: 20px;
     text-align: justify;
+}
+
+.image {
+    background-image:url("../images/waffle.jpg");
+    width: inherit;
+}
+
+.infos {
+    text-align: center;
+    padding: 20px;
 }
 
 /* Main */
