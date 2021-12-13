@@ -4,7 +4,7 @@
   
 /* Style the body */
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
 }
   
@@ -17,6 +17,12 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
 } 
+
+.sticky {
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
   
 /* Column container */
 .row {  
@@ -26,15 +32,74 @@ body {
   
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
-.side {
-    flex: 30%;
-    background-color: #ccccff;
+.reviews {
+    flex: 35%;
+    background-color: #cce6ff;
     padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.reviews-title {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    text-align: left;
+    /* border: 1px solid red; */
+    font-size: 18px;
+}
+
+.reviews-plat {
+    text-align: right;
+    padding: 0px;
+    /* border: 1px solid blue; */
+}
+
+.reviews > hr {
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #000;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.user {
+    border: 1px solid #000;
+    background-color: #3399ff;
+    padding: 3px;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.username {
+    padding: 0px;
+}
+
+.table {
+    display: table;
+}
+
+.allignement {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#waffle {
+    background-image:url(/images/waffle.jpg);
+}
+
+#cupcake {
+    background-image:url(/images/cupcake.jpg);
 }
   
 /* Main column */
 .main {
-    flex: 70%;
+    flex: 65%;
     background-color: white;
     padding: 20px;
 }

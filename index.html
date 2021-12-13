@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display&family=Raleway&display=swap"
         rel="stylesheet">
 </head>
 
@@ -23,42 +23,78 @@
     </div>
 
     <!-- Navigation Bar -->
-    <ul class="menu">
-        <li><a href="index">Accueil</a></li>
-        <li>
-            <a href="bostonPizza">Boston Pizza</a>
-            <ul class="submenu">
-                <li><a href="https://bostonpizza.com/fr/menu.html" target="_blank">Menu</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="usine">L'Usine</a>
-            <ul class="submenu">
-                <li><a href="https://www.restolusine.com/menus" target="_blank">Menu</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="wilfrid">Wilfrid PastaBar</a>
-            <ul class="submenu">
-                <li><a href="http://www.wilfridpastabar.com/e_pages/menu.html" target="_blank">Menu</a></li>
-            </ul>
-        </li>
-        <li><a href="about">À propos</a></li>
-    </ul>
-    <!-- <iframe src="https://www.youtube.com/watch?v=c-Y9XTfWlQA&ab_channel=BostonPizzaCanada" width="500"></iframe>
-    <iframe src="https://www.youtube.com/watch?v=9mXCX5PhL6s&t=213s&ab_channel=CinemaOstClub" width="500"></iframe> -->
+
+    <nav class="sticky">
+        <ul class="menu">
+            <li><a href="index">Accueil</a></li>
+            <li>
+                <a href="bostonPizza">Boston Pizza</a>
+                <ul class="submenu">
+                    <li><a href="https://bostonpizza.com/fr/menu.html" target="_blank">Menu</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="usine">L'Usine</a>
+                <ul class="submenu">
+                    <li><a href="https://www.restolusine.com/menus" target="_blank">Menu</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="wilfrid">Wilfrid PastaBar</a>
+                <ul class="submenu">
+                    <li><a href="http://www.wilfridpastabar.com/e_pages/menu.html" target="_blank">Menu</a></li>
+                </ul>
+            </li>
+            <li><a href="about">À propos</a></li>
+        </ul>
+    </nav>
     <!-- The flexible grid (content) -->
     <div class="row">
-        <div class="side">
-            <h2>About Me</h2>
-            <h5>Photo of me:</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-            <h3>More Text</h3>
-            <p>Lorem ipsum dolor sit ame.</p>
-            <div class="fakeimg" style="height:60px;">Image</div><br>
-            <div class="fakeimg" style="height:60px;">Image</div><br>
-            <div class="fakeimg" style="height:60px;">Image</div>
+        <div class="reviews">
+            <div>
+                <div class="reviews-title">
+                    <div class="user table">
+                        <div class="icon" id="waffle"></div>
+                        <div class="username allignement">MsWaffle4937</div>
+                    </div>
+                    <span class="table">
+                        <div class="reviews-plat allignement">Poutine de l'enfance : ☆☆☆</div>
+                    </span>
+                </div>
+                <p>
+                    Pour commencer, la sauce n'est pas une véritable sauce à poutine. Par contre, son goût très bon en
+                    bouche donne un minimum de 4 étoiles à la poutine.
+                    Ensuite, les frites sont bonne, mais un peu trop grasse. Donc un 4 étoiles. Finalement le fromage...
+                    très déçu, ne fait pas squick squick et fond rapidement. 2 étoiles.
+                    La poutine comporte aussi des Pogos et des croquettes, les cuisiniers sont très peu généreux dans
+                    leur portion, un seul Pogos et seulement quelques croquettes coupées en longueur.
+                    En bref, un 3 étoiles pour la poutine de l'enfance de chez L'Usine.
+                </p>
+            </div>
+            <hr>
+            <div>
+                <div class="reviews-title">
+                    <div class="user table">
+                        <div class="icon" id="cupcake"></div>
+                        <div class="username allignement allignement">QueenCupcake44</div>
+                    </div>
+                    <span class="table">
+                        <div class="reviews-plat allignement">Gnocchi Forestier : ☆☆☆☆</div>
+                    </span>
+                </div>
+                <p>Je donne à l’Usine un total de 4 étoiles sur 5, car, à mon humble avis, la nourriture est délicieuse,
+                    mais le service pourrait être meilleur. J’ai goûté aux gnocchis forestiers et… wow! La portion était
+                    parfaite pour moi et la sauce qui les accompagnaient était excellente. La nourriture était également
+                    chaude et est restée chaude tout au long du repas. J’ai retiré une étoile, car, selon moi, le
+                    service aurait pu être un peu mieux. Au niveau de la commande, c’était top! J’ai demandé que mon
+                    plat n’ait pas de champignons et, sans même prendre de notes, la serveuse s’en est souvenue et je
+                    n’ai pas vu un seul champignon dans mon assiette! Mon problème se situe au niveau du départ, nous
+                    avons attendu un bon moment avant de recevoir l’addition. En effet, notre serveuse disparaissait
+                    après s’être occupée des tables plus loins ce qui nous empêchait de lui demander la facture.
+                    Finalement, ce qui le place en-dessous du Boston Pizza est tout simplement le fait qu’il est un peu
+                    moins abordable. On parle ici de 25,24$.
+                </p>
+            </div>
         </div>
         <div class="main">
             <h2>TITLE HEADING</h2>
