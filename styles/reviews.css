@@ -64,12 +64,13 @@
 
 .resto {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 40% auto;
 }
 
 .identification {
-    padding: 10px;
+    padding: 5%;
     margin-right: 5px;
+    height: inherit;
     border: 1px solid #ccc;
 }
 
@@ -84,8 +85,10 @@
 
 .image {
     width: 100%;
+    padding-top: 56.5%;
     background-size: contain;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
+    min-height: inherit;
 }
 
 .identification > hr {
@@ -97,9 +100,14 @@
     padding: 0;
 }
 
+/* .identification h2 {
+    padding: 3%;
+} */
+
 .element {
     display: grid;
     grid-template-columns: 10% 90%;
+    /* padding: 3%; */
 }
 
 .icon {
@@ -120,4 +128,15 @@
 
 #icon-website {
     background-image:url("../images/website.png");
+}
+
+@media screen and (min-width: 701px) {
+    .resto {
+        grid-template-columns: 30% auto;
+        font-size: 15px;
+    }
+
+    .element {
+        grid-template-columns: 15% 90%;
+    }
 }
