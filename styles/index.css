@@ -14,17 +14,15 @@
 .about-image {
     background-image:url("../images/paul.jpg");
     width: 100%;
-    height: 400px;
-    background-size: cover;
+    padding-top: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid #cccccc;
 }
 
 .about-nom {
     font-size: 20px;
     font-weight: bold;
-}
-
-.contact {
-    border: 1px solid #cccccc;
 }
 
 .infos {
@@ -34,9 +32,68 @@
 /* Main */
 .main {
     flex: 80%;
-    padding: 20px;
+    padding-top: 20px;  
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
 }
 
 .resto {
+    margin-right: 3%;
+    /* border: 1px solid #cccccc; */
+}
 
+.resto-visuel {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.resto-image {
+    width: 100%;
+    padding-top: 56.25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.resto-logo {
+    width: 100%;
+    padding-top: 56.25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #999;
+    background-position: center;
+    border: 1px solid #000;
+}
+
+.resto-nom {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.resto-description {
+
+}
+
+#logo-boston {
+    background-image:url("../images/bpLogo.png");
+}
+
+#logo-usine {
+    background-image:url("../images/usineLogo.webp");
+}
+
+#logo-wilfrid {
+    background-image:url("../images/wilfridLogo.png");
+    background-size: 75%;
+}
+
+#image-boston {
+    background-image:url("../images/bostonPizza.jpg");
+}
+
+#image-usine {
+    background-image:url("../images/usine.jpg");
+}
+
+#image-wilfrid {
+    background-image:url("../images/wilfrid.jpg");
 }
