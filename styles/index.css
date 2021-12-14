@@ -74,27 +74,3 @@
 
 } */
 
-#logo-boston {
-    background-image:url("../images/bpLogo.png");
-}
-
-#logo-usine {
-    background-image:url("../images/usineLogo.webp");
-}
-
-#logo-wilfrid {
-    background-image:url("../images/wilfridLogo.png");
-    background-size: 75%;
-}
-
-#image-boston {
-    background-image:url("../images/bostonPizza.jpg");
-}
-
-#image-usine {
-    background-image:url("../images/usine.jpg");
-}
-
-#image-wilfrid {
-    background-image:url("../images/wilfrid.jpg");
-}
