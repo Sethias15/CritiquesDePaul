@@ -34,6 +34,9 @@
 .main {
     flex: 80%;
     padding-top: 20px;  
+}
+
+.critiques {
     display: grid;
     grid-template-columns: 33% 33% 33%;
 }
@@ -65,7 +68,7 @@
     border: 1px solid #000;
 }
 
-.resto-nom {
+.intertitre {
     font-size: 20px;
     font-weight: bold;
 }
@@ -74,3 +77,12 @@
 
 } */
 
+.news {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 5%;
+}
+
+.video {
+    /* height: inherit; */
+}
