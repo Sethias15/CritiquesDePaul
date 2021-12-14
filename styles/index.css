@@ -12,9 +12,8 @@
 }
 
 .about-image {
-    background-image:url("../images/smurf.jpg");
+    background-image:url("../images/paul.jpg");
     width: 100%;
-    max-width: 200px;
     height: 200px;
     background-size: cover;
 }
