@@ -1,3 +1,4 @@
+/* Anton */
 .side {
     flex: 18%;
     font-size: 15px;
@@ -29,7 +30,7 @@
     padding: 20px;
 }
 
-/* Main */
+/* Acceuil */
 .main {
     flex: 80%;
     padding-top: 20px;  
@@ -69,9 +70,9 @@
     font-weight: bold;
 }
 
-.resto-description {
+/* .resto-description {
 
-}
+} */
 
 #logo-boston {
     background-image:url("../images/bpLogo.png");
