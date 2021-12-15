@@ -30,9 +30,6 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-  
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
 
 .table {
     display: table;
@@ -41,13 +38,6 @@ body {
 .allignement {
     display: table-cell;
     vertical-align: middle;
-}
-  
-/* Fake image, just for this example */
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
 }
   
 /* Footer */
@@ -77,6 +67,10 @@ body {
   
 /* Layout change when screen is 700px or smaller*/
 @media screen and (max-width: 700px) {
+    .header {
+        font-size: 15px;
+    }
+    
     .row, .menu {   
         flex-direction: column;
     }
