@@ -105,6 +105,7 @@
 } */
 
 .element {
+    font-size: 20px;
     display: grid;
     grid-template-columns: 10% 90%;
     /* padding: 3%; */
