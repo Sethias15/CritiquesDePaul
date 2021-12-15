@@ -1,3 +1,7 @@
+body {
+    font-size: 20px;
+}
+
 /* Anton */
 .side {
     flex: 18%;
@@ -5,7 +9,6 @@
     margin: 1%;
     height: fit-content;
     text-align: center;
-
 }
 
 .about {
@@ -13,12 +16,15 @@
 }
 
 .about-image {
-    background-image:url("../images/paul.jpg");
+    /* background-image:url("../images/paul.jpg"); */
     width: 100%;
     padding-top: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    border: 1px solid #cccccc;
+}
+
+.image {
+    width: 100%;
 }
 
 .about-nom {
@@ -28,6 +34,8 @@
 
 .infos {
     padding: 20px;
+    display: grid;
+    grid-template-rows: 16% 16% 16% 16% 16% 16%;
 }
 
 /* Acceuil */
@@ -43,7 +51,6 @@
 
 .resto {
     margin-right: 3%;
-    /* border: 1px solid #cccccc; */
 }
 
 .resto-visuel {
@@ -69,22 +76,61 @@
 }
 
 .intertitre {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
 }
 
-/* .resto-description {
-
-} */
-
 .news {
     display: grid;
-    grid-template-columns: 30% 70%;
-    margin-bottom: 5%;
+    grid-template-columns: 50% 50%;
+    margin: 2.5%;
+    text-align: justify;
+}
+
+.contenantVideo {
+    margin: 5%;
+    padding: 5%;
+    background-color: #3399ff;
+    border: 1px #ccc solid;
+    text-align: center;
 }
 
 .video {
-    width:100%;
-    height:100%;
-    margin-right: 2.5%;
+    width: 400px;
+    height: 225px;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        font-size: 10px;
+    }
+
+    .intertitre {
+        font-size: 15px;
+    }
+    
+    .news {
+        display: none;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    .infos {
+        font-size: 10px;
+    }
+
+    .about-nom {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (min-width: 701px) {
+
 }
