@@ -16,7 +16,7 @@ body {
 }
 
 .about-image {
-    /* background-image:url("../images/paul.jpg"); */
+    /* background-image:url("../images/anton.jpg"); */
     width: 100%;
     padding-top: 100%;
     background-size: contain;
@@ -50,7 +50,8 @@ body {
 }
 
 .resto {
-    margin-right: 3%;
+    margin: 3%;
+    text-align: justify;
 }
 
 .resto-visuel {
@@ -60,14 +61,15 @@ body {
 
 .resto-image {
     width: 100%;
-    padding-top: 56.25%;
+    /* padding-top: 56.25%; */
+    border: 1px #ccc solid;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .resto-logo {
     width: 100%;
-    padding-top: 56.25%;
+    /* padding-top: 56.25%; */
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #999;
@@ -88,16 +90,18 @@ body {
 }
 
 .contenantVideo {
-    margin: 5%;
+    margin: 10%;
     padding: 5%;
     background-color: #3399ff;
     border: 1px #ccc solid;
     text-align: center;
+    width: 400px;
+    height: 225px;
 }
 
 .video {
-    width: 400px;
-    height: 225px;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width: 700px) {
@@ -113,22 +117,42 @@ body {
         display: none;
     }
 
+    .critiques {
+        display: block;
+    }
+
+    .resto {
+        display: grid;
+        grid-template-columns: auto 50% ;
+        margin: 5%;
+    }
+
+    .resto-visuel {
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .news {
+        display: none;
+    }
+
+    .row {   
+        flex-direction: column;
+    }
+
     .about {
         display: grid;
         grid-template-columns: 40% 60%;
     }
 
-    .infos {
-        font-size: 10px;
-    }
-
-    .about-nom {
+    body {
         font-size: 15px;
     }
-}
 
-@media screen and (max-width: 992px) {
-
+    .intertitre {
+        font-size: 20px;
+    }
 }
 
 @media screen and (min-width: 701px) {
