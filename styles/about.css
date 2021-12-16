@@ -1,6 +1,32 @@
+/* Main */
+.main {
+    margin: 5%;
+     
+    text-align: justify;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    background-color: #cce6ff;
+}
+
+/* Section anton */
+.anton {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* Image d'Anton */
 .image {
-    background-image:url("../images/paul-about.jpg");
     width: 100%;
-    height: 200px;
-    background-size: cover;
+    padding: 5%;
+}
+
+/* Paragraphe anton */
+.texte {
+    padding: 2.5%;
+}
+
+/* Section vrai informations */
+.info {
+    font-size: 15px;
+    text-align: center;
 }

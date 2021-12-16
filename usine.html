@@ -14,6 +14,9 @@
 </head>
 
 <body>
+    <!-- Top Link -->
+    <a id="top"></a>
+    
     <!-- Header -->
     <div class="header">
         <h1>Les critiques d'Anton</h1>
@@ -45,9 +48,6 @@
             <li><a href="about">À propos</a></li>
         </ul>
     </nav>
-
-    <!-- Top Link -->
-    <a id="top"></a>
 
     <!-- The flexible grid (content) -->
     <div class="row">
@@ -119,7 +119,7 @@
                     </div>
                 </div>
                 <!-- <div class="image" id="image-usine"></div> -->
-                <img src="images/usine.jpg" alt="Usine">
+                <img class="image" src="images/usine.jpg" alt="Usine">
             </div>
             <p>Je suis récemment allé à deux reprises à l’Usine avec des amis ce qui m’a permis d’y goûter deux repas
                 différents. Bien que tous deux soient des burgers, le menu est très diversifié et c’était simplement un
@@ -135,7 +135,7 @@
                 et les clients sont souvent forcés de parler un peu plus fort pour bien s’entendre. Cela donne un
                 résultat comme celui-ci:
             </p>
-            <audio controls src="usine.mp3" type="audio/mpeg">
+            <audio class="audio" controls src="usine.mp3" type="audio/mpeg">
                 Audio non supporté sur cet explorateur
             </audio>
             <p>
@@ -148,10 +148,9 @@
 
     <!-- Footer -->
     <div class="footer">
-        <a href="#top">Appuyer ici pour revenir en haut</a>
+        <a href="#top" class="top">Appuyer ici pour revenir en haut</a>
         <p>© 2021 Olivier Morin. Tous droits réservés.</p>
     </div>
-
 </body>
 
 </html>

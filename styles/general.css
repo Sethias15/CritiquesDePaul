@@ -1,15 +1,16 @@
+/*  */
 *{
     box-sizing: border-box;
 }
-  
-/* Style the body */
+
+/* Général */
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    background-color: #cce6ff;
+    background-color: white;
 }
-  
-/* Header/logo Title */
+
+/* En-tête */
 .header {
     padding: 30px;
     text-align: center;
@@ -19,28 +20,31 @@ body {
     font-size: 20px;
 } 
 
+/* Permet élément reste sur page (nav) */
 .sticky {
     position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 }
-  
-/* Column container */
+
+/* Disposition page */
 .row {  
     display: flex;
     flex-wrap: wrap;
 }
 
+/* Changement en display tanle */
 .table {
     display: table;
 }
 
+/* Allignement vertical */
 .allignement {
     display: table-cell;
     vertical-align: middle;
 }
   
-/* Footer */
+/* Pied de page */
 .footer {
     text-align: center;
     background-color: #333;
@@ -50,6 +54,7 @@ body {
     font-size: 15px;
 }
 
+/* Liens dans le pied de page */
 .footer a {
     text-decoration: none;
     background-color: #333346;
@@ -59,49 +64,59 @@ body {
     padding: 5px;
 }
 
+/* Texte dans le pied de page */
 .footer p {
     margin: 0px;
     padding: 5px;
 }
 
   
-/* Layout change when screen is 700px or smaller*/
+/* Layout change quand écran est 700px ou  plus petit */
 @media screen and (max-width: 700px) {
+    /* Changement général (700px-) */
+    body {
+        font-size: 10px;
+    }
+    
+    /* Changement sur en-tête (700px-) */
     .header {
         font-size: 15px;
     }
     
+    /* Changement sens page et menu (700px-) */
     .row, .menu {   
         flex-direction: column;
     }
 
+    /* Changement sur éléments de liste du menu (700px-) */
     .menu li {
         width: 100%;
         font-size: 10px;
     }
 
+    /* Changement survol liens du menu menu (700px-) */
     .menu li a:hover {
         background-color: rgb(70,70,70);
     }
 
+    /* Changement sur éléments de liste du submenu (700px-) */
     .submenu li{
         background-color: rgb(60,60,60);
     }
 
-    body {
-        font-size: 10px;
-    }
-
+    /* Changement sticky (700px-) */
     .sticky {
         position: -webkit-relative;
 	    position: relative;
     }
 
+    /* Changement pied de page (700px-) */
     .footer {
         display: grid;
         grid-template-columns: 30% 70%;
     }
 
+    /* Changement liens du pied de page (700px-) */
     .footer a {
         display: block;
     }
@@ -114,18 +129,15 @@ body {
     }
 } */
 
-/* Layout change when screen is bigger than 700px */
+/* Layout change quand écran est 701px ou  plus grand */
 @media screen and (min-width: 701px) {
+    /* Changement sur éléments de liste du menu (701px+) */
     .menu > li {
         width: 20%;
     }
 }
 
-/* Menu */
-.menu ul, ul.menu {
-    padding-left: 0px;
-}
-
+/* Généralité menu */
 .menu{
 
     /* Propriétés du menu */
@@ -146,13 +158,19 @@ body {
     font-family: 'Fira Sans', sans-serif;
 }
 
+/* Retirer padding sous-menu */
+.menu ul, ul.menu {
+    padding-left: 0px;
+}
+
+/* Éléments de liste du menu */
 .menu li {
     list-style: none;
     height: inherit;
     text-align: center;
-    /* border: 1px solid red; */
 }
 
+/* Liens du menu */
 .menu li a{
     border: 1px solid black;
     padding: 14px 0px;
@@ -161,14 +179,17 @@ body {
     color: #fff;
 }
 
+/* Comportement par défaut sous-menu */
 ul.submenu{
     display: none;
 }
 
+/* Liens du menu au survol */
 .menu a:hover{
     background-color: rgb(60,60,60);
 }
 
+/* Sous-menu */
 .menu li:hover > ul.submenu{
     margin: 0px;
     display: block;
@@ -177,28 +198,18 @@ ul.submenu{
     width: inherit;
 }
 
-/* Images */
+/* Logo Boston Pizza */
 #logo-boston {
     background-image:url("../images/bpLogo.png");
 }
 
+/* Logo Usine */
 #logo-usine {
     background-image:url("../images/usineLogo.webp");
 }
 
+/* Logo Wilfrid */
 #logo-wilfrid {
     background-image:url("../images/wilfridLogo.png");
     background-size: 75%;
 }
-
-/* #image-boston {
-    background-image:url("../images/bostonPizza.jpg");
-}
-
-#image-usine {
-    background-image:url("../images/usine.jpg");
-}
-
-#image-wilfrid {
-    background-image:url("../images/wilfrid.jpg");
-} */

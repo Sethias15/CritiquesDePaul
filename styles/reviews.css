@@ -1,24 +1,26 @@
+/* Général */
+body {
+    font-size: 20px;
+    text-align: justify;
+}
+
 /* Users reviews */
 .reviews {
     flex: 35%;
     background-color: #cce6ff;
     padding: 20px;
-    font-size: 20px;
-    text-align: justify;
 }
 
 .reviews-title {
     display: grid;
     grid-template-columns: 35% 65%;
     text-align: left;
-    /* border: 1px solid red; */
     font-size: 16.5px;
 }
 
 .reviews-plat {
     text-align: right;
     padding: 0px;
-    /* border: 1px solid blue; */
 }
 
 .reviews > hr {
@@ -58,7 +60,6 @@
 /* Main */
 .main {
     flex: 65%;
-    background-color: white;
     padding: 20px;
 }
 
@@ -69,8 +70,7 @@
 
 .identification {
     padding: 5%;
-    margin-right: 5px;
-    height: inherit;
+    margin-right: 1%;
     border: 1px solid #ccc;
 }
 
@@ -85,10 +85,6 @@
 
 .image {
     width: 100%;
-    padding-top: 56.5%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: inherit;
 }
 
 .identification > hr {
@@ -100,15 +96,11 @@
     padding: 0;
 }
 
-/* .identification h2 {
-    padding: 3%;
-} */
-
 .element {
     font-size: 20px;
     display: grid;
     grid-template-columns: 10% 90%;
-    /* padding: 3%; */
+    padding-right: 10%;
 }
 
 .icon {
@@ -118,6 +110,13 @@
     border-radius: 10px;
 }
 
+p {
+    margin: 5%;
+}
+
+.audio {
+    margin-left: 5%;
+}
 
 #icon-phone {
     background-image:url("../images/phone.png");
