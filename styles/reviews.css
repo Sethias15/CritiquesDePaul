@@ -145,12 +145,8 @@ p {
     .image {
         display: none;
     }
-}
 
-@media screen and (max-width: 992px) {
-
-}
-
-@media screen and (min-width: 701px) {
-
+    .resto {
+        display: block;
+    }
 }
